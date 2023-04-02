@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    
+    <script src="./script.js"></script>
+
+    <title>Document</title>
+</head> 
+<body>
+    <div class="header">
+        <div id="progress"></div>
+        <button>Step 1</button>
+        <button>Step 2</button>
+        <button>Step 3</button>
+    </div>
+
+    <div id="container">
+        <div id="con1" class="form">
+            <div class="card">
+                <h1>CREATE ACCOUNT</h1>
+                <div class="input">
+                    <input id="input1" type="text" placeholder="email">
+                </div>
+
+                <div class="input">
+                    <input id="input2" type="password" placeholder="password">
+                </div>
+        
+                <div class="input">
+                    <input id="input3" type="password" placeholder="confirm password">
+                </div>
+            </div>
+            <div class="buttonRow">
+                <button onclick="gotoPage2()"><p>Next</p></button>
+            </div>
+        </div>
+
+        <div id="con2" class="form">
+            <div class="card">
+                <h1>SOCIAL LINKS</h1>
+                <div class="input">
+                    <input id="input1" type="text" placeholder="medium" required>
+                </div>
+
+                <div class="input">
+                    <input id="input2" type="password" placeholder="Github">
+                </div>
+        
+                <div class="input">
+                    <input id="input3" type="password" placeholder=" Linkedin">
+                </div>
+            </div>
+            <div class="buttonRow">
+                <button onclick="gotoPage1()"><p>Back</p></button>
+                <button onclick="gotoPage3()"><p>Next</p></button>
+            </div>
+        </div>
+
+        <div id="con3" class="form">
+            <div class="card">
+                <h1>PERSONAL INFO</h1>
+                <div class="input">
+                    <input id="input1" type="text" placeholder="First Name">
+                </div>
+
+                <div class="input">
+                    <input id="input2" type="password" placeholder="Last Name">
+                </div>
+        
+                <div class="input">
+                    <input id="input3" type="password" placeholder="Mobile No.">
+                </div>
+            </div>
+                <div class="buttonRow">
+                <button onclick="gotoPage2()"><p>Back</p></button>
+                <button onclick = "submit()"><p>Submit</p></button>
+            </div>
+        </div> 
+    </div>
+
+
+</body>
+</html>
